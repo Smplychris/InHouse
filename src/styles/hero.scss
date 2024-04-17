@@ -142,21 +142,3 @@
 	background-color: c.$orange;
 	height: 900px;
 }
-.ads-wrapper {
-	display: flex;
-	flex-direction: row;
-	gap: 24px;
-	align-items: center;
-	justify-content: space-between;
-}
-.ad {
-	width: 100%;
-}
-.ad-content {
-	width: 100%;
-	height: 100%;
-	img {
-		height: 100px;
-		background-color: red;
-	}
-}
