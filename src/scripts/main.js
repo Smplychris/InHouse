@@ -125,3 +125,15 @@ companies.forEach((company) => {
 		companyHover.reverse();
 	});
 });
+
+let videos = document.querySelectorAll(".instagram-element");
+videos.forEach((video) => {
+	let videoScroll = gsap.timeline({
+		scrollTrigger: { trigger: video, start: "top 80%" },
+	});
+	videoScroll.from(video, {
+		filter: "blur(30px)",
+		scale: 0.8,
+		opacity: 0,
+	});
+});
