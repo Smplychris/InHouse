@@ -139,6 +139,7 @@
 }
 .ads-section {
 	width: 100%;
+	background-color: c.$orange;
 }
 .ads-wrapper {
 	display: flex;
@@ -153,9 +154,4 @@
 .ad-content {
 	width: 100%;
 	height: 100%;
-	video {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
 }
