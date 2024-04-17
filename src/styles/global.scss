@@ -1,0 +1,29 @@
+@use "./colors.scss" as c;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
+button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: auto;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+	text-align: inherit;
+	border-radius: 0;
+}
+.container {
+	width: 100%;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-inline: 16px;
+}

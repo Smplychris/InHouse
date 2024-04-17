@@ -1,0 +1,91 @@
+@use "./colors.scss" as c;
+@use "./fonts.scss" as f;
+@use "./global.scss" as g;
+.nav {
+	display: flex;
+	position: fixed;
+	top: 16;
+	width: 100%;
+	//background-color: #ffffffcc;
+	//-webkit-backdrop-filter: blur(30px);
+	//;
+	z-index: 999;
+	//box-shadow: 0px 8px 26px 3px rgba(0, 0, 0, 0.102);
+}
+.nav-wrapper {
+	width: 100%;
+	border-radius: 24;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding-block: 12px;
+	padding-inline: 12px;
+	background-color: #ffffff88;
+	//backdrop-filter: blur(30px);
+	box-shadow: 0px 8px 26px 3px rgba(0, 0, 0, 0.102);
+}
+.nav-logo {
+	width: 100%;
+	max-width: 160px;
+	min-width: 140px;
+	flex-shrink: none;
+	padding-left: 10px;
+	img {
+		width: 100%;
+	}
+}
+.nav-links {
+	display: flex;
+	flex-direction: row;
+	gap: 48px;
+
+	a {
+		color: c.$warmblack;
+		line-height: 1;
+		font-size: 14px;
+		font-family: "Basetica", sans-serif;
+	}
+}
+.nav-link {
+	//overflow: hidden;
+	color: c.$warmblack;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	font-size: 14px;
+}
+.nav-link-line {
+	//margin-top: 4px;
+	position: absolute;
+	bottom: -10;
+	height: 6px;
+	width: 6px;
+	border-radius: 6;
+	background-color: c.$orange;
+}
+
+.nav-buttons {
+	font-family: "Basetica", sans-serif;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	gap: 16px;
+}
+.nav-button {
+	font-size: 14px;
+	//background-color: c.$orange;
+	border: 1px solid c.$warmblack;
+	border-radius: 12px;
+	padding-inline: 14px;
+	padding-block: 12px;
+	color: c.$warmblack;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
