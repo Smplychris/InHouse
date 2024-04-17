@@ -175,7 +175,11 @@
 	video {
 		//width: 50%;
 		height: 30vw;
+		max-height: 600px;
 		border-radius: 22;
 		box-shadow: -1px 10px 93px -24px rgba(0, 0, 0, 0.44);
 	}
+}
+.second {
+	background-color: c.$blue;
 }
